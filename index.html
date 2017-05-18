@@ -1,0 +1,36 @@
+<!--Esta pagina estara comentada y como no veo necesario comentar futuras paginas que tiene practicamente la misma estructura, solo comentare las partes nuevas o etiquetas nuevas que se usaron-->
+
+<!--Las paginas de los diferentes idiomas son iguales en su estructura, lo unico diferente seria el idioma del contenido, asi como caracteres propios de cada idioma, por lo tanto no veo necesario comentarlo ya que dichos caracteres son igualmente soportados por el UTF-8 que es el charset utilizado en todas las paginas.-->
+
+<!doctype html>
+<html>
+    
+<!-- El head contiene informacion acerca del documento, de la cual la mayoria no se mostrara en el navegador, es una seccion que es solamente informativa -->
+    <head>
+        <!-- la etiqueta meta puede tener diferentes funciones ya sea    para indicar el UNICODE con el cual se va a trabajar,          descripcion de la pagina u otras cosas-->
+        <meta charset="utf-8"><!-- indica la codificacion de              caracteres utilizados -->
+        <meta name="author" content="David Rico"><!-- indica el ator        de la pagina -->
+        <meta name="keywords" content="Kioto,Kyoto,Kyouto"><!-- indica      las palabras claves que debera reconocer un buscador web      -->
+        <meta name="vieport" content="width=devise-width, user-scalable=no, initial-scale=no,maximum-scale=1.0,minimum-scale=1.0">
+        <title>Idioma Language 言語</title><!-- Es el que me determina    el titulo de la pagina, la que aparece en la pestaña del      navegador -->
+        <link href="estilos.css" rel="stylesheet" type="text/css"><!--    busca lo referente a una direccion dada asi como el tipo de    que estamos buscando-->
+    </head>
+    
+<!-- El body contiene todo lo que se va a mostrar en la pagina web, el la seccion de construccion de la estructura basica de la pagina -->
+    <body class="fondo">
+    <!--bloque creado para almacenar 3 parrafos los cuales tienen una imagen que redireccionara a una pagina con la informacion correspondiente-->
+    <div>
+        <p class="texto" ><a href="es/inicio.html" target="_self"><img src="imagenes/Espaniol.jpg" width="300" height="200" alt="Español"/></a>
+            <br>Español
+        </p>
+        
+        <p class="texto"><a href="en/inicio.html" target="_self"><img src="imagenes/ingles.jpg" width="300" height="200" alt="English"/></a>
+            <br>English
+        </p>
+        
+        <p class="texto"><a href="jp/inicio.html" target="_self"><img src="imagenes/japones.jpg" width="300" height="200" alt="日本語/"></a>
+            <br>日本語
+        </p>
+    </div>
+    </body>
+</html>

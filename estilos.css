@@ -1,0 +1,536 @@
+*{
+  padding: 0;
+  margin: 0;
+ }
+/******************************************************************************************************************************************/
+
+/* Estilos para la pagina de seleccion de idioma */
+
+.fondo {
+    background-image: url(imagenes/1fondo.jpg);/*Determina la imagen que se va a poner de fondo*/
+    background-repeat: repeat;/*Se utiliza para que la imagen de fondo se repita tanto en el eje x como en el eje y*/
+}
+/*damos las caractesisticas de la fuente que se va a utilizar, como el tamaño, el estilo, el color entre otros.*/
+.texto {
+    position: relative;
+	font-family: tahoma;
+	font-size: 25px;
+	font-style: normal;
+	text-align: center;
+    color: crimson;
+	margin:25px;
+	float:left;
+}
+/*Indicaciones de reajuste del fondo y fuente cuando la pantalla sea de 480 pixeles o menor*/
+@media only screen and (max-width: 480px){
+    .texto {
+        font-size: 30px;
+        color: chartreuse
+    }
+    .fondo{
+        background-image: url(imagenes/1fondo480px.jpg);
+        background-repeat: repeat;
+    }
+}
+
+/******************************************************************************************************************************************/
+
+/*Estilo para laspaginas es,en,jp*/
+
+/*Se dan el tamaño de la caja en donde voy a colocar el titulo. El "margin: auto", centra ,en x, el div en la ventana del navegador*/
+#titulo{
+    margin: auto;
+    width: 900px;
+    height: 50px;
+    text-align: center;
+}/*Coloco la imagen de fondo de la pagina*/#fondo2{
+    background-image: url(imagenes/2fondo.jpg);
+    background-repeat: repeat;
+}/*Creo la caja donde van a estar las refesencias y el mapa de la pagina*/#creditos{
+    margin: auto;
+    position: relative;
+    width: 500px;
+    height: 90px;
+    top: 320px;
+    text-align: center;
+    background-color: aquamarine;
+    padding-top: 15px;
+}/*Creo la caja en donde se van a colocar las banderas para el cambio de idioma*/#idioma{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    float: right;
+}
+/*Apartir de aqui van los estilos para el menu, en el cual solo damos los colores y la ubicacion del menu*/
+header{
+    position: relative;
+    width: 100%;
+    top: 280px;
+    font-size: 50px;
+    z-index: 1;
+}header nav{
+    width: 90%;
+    max-width: 1320px;
+    margin: 20px auto;
+    background: #024959;
+}.menu_bar{
+    display: none;
+}header nav ul{
+    overflow: hidden;
+    list-style: none;
+}header nav ul li{
+    float: left;
+    border-right: 1px solid rgba(255,255,255, 0.3);
+}header nav ul li a{
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}header nav ul li a:hover{
+    background: #037e8c;
+}ul, ol{
+    list-style: none;
+}/*Aqui termina los estilos del menu*/
+
+/*Apartir de aqui comienzan los estilos deel mini menu de seleccion de idioma, en el cual damos las indicacions para que permanesca oculto y cuando pasemos el mouse se muestre completo*/
+.idioma li img{
+    background-color: black;
+}.idioma li img:hover{
+    background-color: burlywood;
+}.idioma >li {
+    float: left;
+}.idioma li ul{
+    display: none;
+}.idioma li:hover > ul{
+    display: block;
+}/*Aqui termian los estilos del menu de seleccion de idioma*/
+
+/*Aqui comienzan los estilos utilizados para la colocacion de los gif de petalos cayendo, en el cual damos el tamaño y con "z-index: -10" nos aseguramos que quede atras de cualquier otro elemento que coloquemos futuramente en la pagina*/
+#ingif{
+    position: absolute;
+    background-image: url(gif/petalos1-1000p.gif);
+    width: 1920px;
+    height: 980px;
+    z-index: -10;
+}#ingif2{
+    position: absolute;
+    background-image: url(gif/petalos2-1000p.gif);
+    width: 1920px;
+    height: 980px;
+    z-index: -10;
+}#lugif{
+    position: absolute;
+    background-image: url(gif/petalos1-1000p.gif);
+    width: 1920px;
+    height: 2100px;
+    z-index: -10;
+}#lugif2{
+    position: absolute;
+    background-image: url(gif/petalos2-1000p.gif);
+    width: 1920px;
+    height: 2100px;
+    z-index: -10;
+}#magif{
+    position: absolute;
+    background-image: url(gif/petalos1-1000p.gif);
+    width: 1920px;
+    height: 2100px;
+    z-index: -10;
+}#magif2{
+    position: absolute;
+    background-image: url(gif/petalos2-1000p.gif);
+    width: 1920px;
+    height: 2100px;
+    z-index: -10;
+}#i1gif{
+    position: absolute;
+    background-image: url(gif/petalos1-1000p.gif);
+    width: 1920px;
+    height: 1100px;
+    z-index: -10;
+}#i1gif2{
+    position: absolute;
+    background-image: url(gif/petalos2-1000p.gif);
+    width: 1920px;
+    height: 1100px;
+    z-index: -10;
+}#i2gif{
+    position: absolute;
+    background-image: url(gif/petalos1-1000p.gif);
+    width: 1920px;
+    height: 1150px;
+    z-index: -10;
+}#i2gif2{
+    position: absolute;
+    background-image: url(gif/petalos2-1000p.gif);
+    width: 1920px;
+    height: 1150px;
+    z-index: -10;
+}#i3gif{
+    position: absolute;
+    background-image: url(gif/petalos1-1000p.gif);
+    width: 1920px;
+    height: 1180px;
+    z-index: -10;
+}#i3gif2{
+    position: absolute;
+    background-image: url(gif/petalos2-1000p.gif);
+    width: 1920px;
+    height: 1180px;
+    z-index: -10;
+}#i4gif{
+    position: absolute;
+    background-image: url(gif/petalos1-1000p.gif);
+    width: 1920px;
+    height: 1380px;
+    z-index: -10;
+}#i4gif2{
+    position: absolute;
+    background-image: url(gif/petalos2-1000p.gif);
+    width: 1920px;
+    height: 1380px;
+    z-index: -10;
+}#regif{
+    position: absolute;
+    background-image: url(gif/petalos1-1000p.gif);
+    width: 1920px;
+    height: 5350px;
+    z-index: -10;
+}#regif2{
+    position: absolute;
+    background-image: url(gif/petalos2-1000p.gif);
+    width: 1920px;
+    height: 5350px;
+    z-index: -10;
+}#fegif{
+    position: absolute;
+    background-image: url(gif/petalos1-1000p.gif);
+    width: 1920px;
+    height: 3050px;
+    z-index: -10;
+}#fegif2{
+    position: absolute;
+    background-image: url(gif/petalos2-1000p.gif);
+    width: 1920px;
+    height: 3050px;
+    z-index: -10;
+}/*Aqui terminana los estilos de los gif*/
+
+/*Aqui estan los estilos de los subtitulos, en el cual deficnimos la posicion en color de fondo y la separacion de la letra con el borde, y con "border-radius:25px le quito las esquinas a la caje y les doy unos border circulares"*/#h2{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    max-width: 650px;
+    min-height: 30px;
+    top: 290px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: burlywood;
+    border-radius: 25px;
+}#h2_2{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    max-width: 650px;
+    min-height: 30px;
+    top: 130px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: burlywood;
+    border-radius: 25px;
+}/*Aqui terminan los estilos de los subtitulos*/
+
+
+/*Aqui estan los estilos de los parrafos que utilize, en los cuales coloco un color de fondo y un borde solido de 10 pixeles, la ubicaion del parrafo y el tamaño minimo y maximo, asi como el tamaño de la fuente utilizada*/
+.p{
+    margin: auto;
+    max-width: 1000px;
+    min-width: 350px;
+    min-height: 200px;
+    position: relative;
+    background-color: floralwhite;
+    top: 300px;
+    padding: 25px;
+    font-size: 20px;
+    border: 10px;
+    text-align: center;
+    border-style: solid;
+}.p2{
+    margin: auto;
+    max-width: 1030px;
+    min-width: 350px;
+    min-height: 200px;
+    position: relative;
+    background-color: floralwhite;
+    top: 300px;
+    padding: 25px;
+    text-align: center;
+    border: 10px;
+    border-style: solid;
+}.p3{
+    margin: auto;
+    width: 1030px;
+    min-height: 200px;
+    position: relative;
+    background-color: floralwhite;
+    top: 300px;
+    padding: 25px;
+    text-align: center;
+    border: 10px;
+    border-style: solid;
+}.p4{
+    margin: 0 auto;
+    position: relative;
+    width: 1500px;
+    text-align: center;
+    top: 20px;
+}.p5{
+    margin: auto;
+    max-width: 1030px;
+    min-width: 350px;
+    min-height: 200px;
+    position: relative;
+    font-size: 30px;
+    background-color: floralwhite;
+    top: 140px;
+    padding: 55px;
+    text-align: left;
+    border: 10px;
+    border-style: solid;
+}/*Aqui terminan el stylo de los parrafos*/
+
+/*Estos son los estilos utilizados en las tablas, definimos una ubicacion,tamaño de la fuente, el color y le damos a la opcion de que este centrada, le definimos una anchura maxima,para que no exeda ese tamaño, asi como un color de fondo para las celdas, uno diferente para las celdas de los titulos, y definimos un espacio entre lo que hay dentro de la celda y el borde.*/
+.tabla {
+	position: relative;
+	max-width:700px;
+	top: 300px;
+	margin:auto;
+	font-size: 25px;
+	text-align: center;
+	text-shadow: 1px 1px #000000;
+    color: #000000;
+}.tabla2 {
+	position: relative;
+	margin:auto;
+	text-align: left;
+}.th {
+	background-color: #505080;
+	font-weight: normal;
+	padding: 10px 6px 4px 10px;
+    border: 10px;
+    border-style:outset;
+}.td {
+	background-color: floralwhite;
+	padding: 10px 8px 10px 10px;
+    border: 10px;
+    border-style:solid;
+}.td2 {
+	padding: 10px 8px 10px 10px;
+}
+/*Aqui termina los estilos de la tabla*/  
+
+
+/*Este es el reajuste que hago al menu de inicio cuando la pantalla sea de 1467 pixeles o menor, en el cual escondo todas las opciones y solo dejo una barra que dice menu, para que las opciones se muestren al hacer click utiliza unos comandos en javascript en el archivo llamado "menu.js"*/
+@media screen and (max-width:1467px){
+    header nav{
+        width: 80%;
+        height: 100%;
+        left: -100%;
+        margin: 0;
+        position:fixed;
+    }header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255,255,255, .3);
+    }.menu_bar{
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }.menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        background: #024959;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+/*Este es el reajuste que hago a los gif, en el cual cambio su tamaño y cargo un gif similar pero donde los petalos son de menor tamaño. Y en cuanto al estilo del parrafo le agrege un margen y reduje el grozor del borde. Cuando la ventana del navegador es de 900 pixeles o menos*/
+@media only screen and (max-width: 900px){
+    #ingif{
+        background-image: url(gif/petalos1-700.gif);
+        width: 900px;
+        height: 900px;
+    }#ingif2{
+        background-image: url(gif/petalos2-700.gif);
+        width: 900px;
+        height: 900px;
+    }#lugif{
+        background-image: url(gif/petalos1-700.gif);
+        width: 900px;
+        height: 2800px;
+    }#lugif2{
+        background-image: url(gif/petalos2-700.gif);
+        width: 900px;
+        height: 2800px;
+    }#magif{
+        background-image: url(gif/petalos1-700.gif);
+        width: 900px;
+        height: 2100px;
+    }#magif2{
+        background-image: url(gif/petalos2-700.gif);
+        width: 900px;
+        height: 2100px;
+    }#i1gif{
+        background-image: url(gif/petalos1-700.gif);
+        width: 900px;
+        height: 1140px;
+    }#i1gif2{
+        background-image: url(gif/petalos2-700.gif);
+        width: 900px;
+        height: 1140px;
+    }#i2gif{
+        background-image: url(gif/petalos1-700.gif);
+        width: 900px;
+        height: 1200px;
+    }#i2gif2{
+        background-image: url(gif/petalos2-700.gif);
+        width: 900px;
+        height: 1200px;
+    }#i3gif{
+        background-image: url(gif/petalos1-700.gif);
+        width: 900px;
+        height: 1250px;
+    }#i3gif2{
+        background-image: url(gif/petalos2-700.gif);
+        width: 900px;
+        height: 1250px;
+    }#i4gif{
+        background-image: url(gif/petalos1-700.gif);
+        width: 900px;
+        height: 1460px;
+    }#i4gif2{
+        background-image: url(gif/petalos2-700.gif);
+        width: 900px;
+        height: 1460px;
+    }#regif{
+        background-image: url(gif/petalos1-700.gif);
+        width: 900px;
+        height: 5350px;
+    }#regif2{
+        background-image: url(gif/petalos2-700.gif);
+        width: 900px;
+        height: 5350px;
+    }#fegif{
+        background-image: url(gif/petalos1-700.gif);
+        width: 900px;
+        height: 3050px;
+    }#fegif2{
+        background-image: url(gif/petalos2-700.gif);
+        width: 900px;
+        height: 3050px;
+    }.p{
+        margin: 20px;
+        border: 7px;
+        border-style: solid;
+    }.p2{
+        margin: 20px;
+        border: 7px;
+        border-style: solid;
+    }
+}
+
+/*Este es el reajuste que hago a los gif, en el cual cambio su tamaño y cargo un gif similar pero donde los petalos son de menor tamaño. Y en cuanto al estilo del parrafo le cambie el color de fondo y cambie el tamaño de la fuente. Cuando la ventana del navegador es de 480 pixeles o menos*/
+@media only screen and (max-width: 480px){
+    #ingif{
+        background-image: url(gif/petalos1-480.gif);
+        width: 850px;
+        height: 900px;
+    }#ingif2{
+        background-image: url(gif/petalos2-480.gif);
+        width: 850px;
+        height: 900px;
+    }#lugif{
+        background-image: url(gif/petalos1-480.gif);
+        width: 850px;
+        height: 4200px;
+    }#lugif2{
+        background-image: url(gif/petalos2-480.gif);
+        width: 850px;
+        height: 4200px;
+    }#magif{
+        background-image: url(gif/petalos1-480.gif);
+        width: 850px;
+        height: 2100px;
+    }#magif2{
+        background-image: url(gif/petalos2-480.gif);
+        width: 4850px;
+        height: 2100px;
+    }#i1gif{
+        background-image: url(gif/petalos1-480.gif);
+        width: 850px;
+        height: 1150px;
+    }#i1gif2{
+        background-image: url(gif/petalos2-480.gif);
+        width: 850px;
+        height: 1150px;
+    }#i2gif{
+        background-image: url(gif/petalos1-480.gif);
+        width: 850px;
+        height: 1250px;
+    }#i2gif2{
+        background-image: url(gif/petalos2-480.gif);
+        width: 850px;
+        height: 1250px;
+    }#i3gif{
+        background-image: url(gif/petalos1-480.gif);
+        width: 850px;
+        height: 1350px;
+    }#i3gif2{
+        background-image: url(gif/petalos2-480.gif);
+        width: 850px;
+        height: 1350px;
+    }#i4gif{
+        background-image: url(gif/petalos1-480.gif);
+        width: 850px;
+        height: 1550px;
+    }#i4gif2{
+        background-image: url(gif/petalos2-480.gif);
+        width: 850px;
+        height: 1550px;
+    }#regif{
+        background-image: url(gif/petalos1-480.gif);
+        width: 850px;
+        height: 5350px;
+    }#regif2{
+        background-image: url(gif/petalos2-480.gif);
+        width: 850px;
+        height: 5350px;
+    }#fegif{
+        background-image: url(gif/petalos1-480.gif);
+        width: 850px;
+        height: 3050px;
+    }#fegif2{
+        background-image: url(gif/petalos2-480.gif);
+        width: 850px;
+        height: 350px;
+    }.p{
+        font-size: 18px;
+        background-color: aquamarine;
+    }.p2{
+        background-color: aquamarine;
+    }
+}
+
+/******************************************************************************************************************************************/
+
+
